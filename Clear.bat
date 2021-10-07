@@ -43,7 +43,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ²²²²²²²²²²²²²²²²²²²² 1%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo Last Clear Time: %DATE% %TIME% >>"C:\Users\Public\Desktop\Log.txt" 
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
@@ -61,7 +61,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: Û²²²²²²²²²²²²²²²²²²² 2%%
+echo Progress: Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 2) Current Local %Temp% Folder files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree %USERPROFILE%\APPDATA\Local\Temp /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -77,7 +77,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: Û²²²²²²²²²²²²²²²²²²² 3%%
+echo Progress: Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 3) Current Windows Prefetch Folder files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree %windir%\Prefetch /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -93,7 +93,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛ²²²²²²²²²²²²²²²²²² 10%%
+echo Progress: ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 10%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 4) Current User Local Setting Temp Folder files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree %USERPROFILE%\APPDATA\Local\Temp /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -109,12 +109,12 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛ²²²²²²²²²²²²²²²²² 15%%
+echo Progress: ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 15%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
-echo 5) Current Recent Folder from Windows 10 only files >>"C:\Users\Public\Desktop\Log.txt" 
+echo 5) Current Recent Folder from Windows 10/11 only files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree "%APPDATA%\Microsoft\Windows\Recent" /F /A >>"C:\Users\Public\Desktop\Log.txt" 
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
-echo 5) Deleting Recent Folder from Windows 10 only >>"C:\Users\Public\Desktop\Log.txt" 
+echo 5) Deleting Recent Folder from Windows 10/11 only >>"C:\Users\Public\Desktop\Log.txt" 
 del /s /f /q "%APPDATA%\Microsoft\Windows\Recent"\*.* >>"C:\Users\Public\Desktop\Log.txt" 
 rd /s /q "%APPDATA%\Microsoft\Windows\Recent" >>"C:\Users\Public\Desktop\Log.txt" 
 md "%APPDATA%\Microsoft\Windows\Recent" >>"C:\Users\Public\Desktop\Log.txt" 
@@ -125,12 +125,12 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛ²²²²²²²²²²²²²²²² 20%%
+echo Progress: ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 20%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
-echo 6) Current Recent Explor Folder from Windows 10 only files >>"C:\Users\Public\Desktop\Log.txt" 
+echo 6) Current Recent Explor Folder from Windows 10/11 only files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree "%APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations" /F /A >>"C:\Users\Public\Desktop\Log.txt" 
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
-echo 6) Deleting Recent Explor Folder from Windows 10 only >>"C:\Users\Public\Desktop\Log.txt" 
+echo 6) Deleting Recent Explor Folder from Windows 10/11 only >>"C:\Users\Public\Desktop\Log.txt" 
 del /s /f /q "%APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations"\*.* >>"C:\Users\Public\Desktop\Log.txt" 
 rd /s /q "%APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations" >>"C:\Users\Public\Desktop\Log.txt" 
 md "%APPDATA%\Microsoft\Windows\Recent\AutomaticDestinations" >>"C:\Users\Public\Desktop\Log.txt" 
@@ -141,12 +141,12 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛ²²²²²²²²²²²²²²² 25%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 25%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
-echo 7) Current Recent Custom Explor Folder from Windows 10 only files >>"C:\Users\Public\Desktop\Log.txt" 
+echo 7) Current Recent Custom Explor Folder from Windows 10/11 only files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree "%APPDATA%\Microsoft\Windows\Recent\CustomDestinations" /F /A >>"C:\Users\Public\Desktop\Log.txt" 
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
-echo 7) Deleting Recent Custom Explor Folder from Windows 10 only >>"C:\Users\Public\Desktop\Log.txt" 
+echo 7) Deleting Recent Custom Explor Folder from Windows 10/11 only >>"C:\Users\Public\Desktop\Log.txt" 
 del /s /f /q "%APPDATA%\Microsoft\Windows\Recent\CustomDestinations"\*.* >>"C:\Users\Public\Desktop\Log.txt" 
 rd /s /q "%APPDATA%\Microsoft\Windows\Recent\CustomDestinations" >>"C:\Users\Public\Desktop\Log.txt" 
 md "%APPDATA%\Microsoft\Windows\Recent\CustomDestinations" >>"C:\Users\Public\Desktop\Log.txt" 
@@ -157,7 +157,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛ²²²²²²²²²²²²²² 30%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 30%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 8) Current Run Command History from Registry files >>"C:\Users\Public\Desktop\Log.txt" 
 REG Query HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU >>"C:\Users\Public\Desktop\Log.txt" 
@@ -172,7 +172,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛ²²²²²²²²²²²²² 35%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 35%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 9) Current Run Command History from Registry files >>"C:\Users\Public\Desktop\Log.txt" 
 REG Query HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths >>"C:\Users\Public\Desktop\Log.txt" 
@@ -186,7 +186,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛ²²²²²²²²²²²² 40%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 40%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 10) Current Windows Prefetch Folder files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree %windir%\Prefetch /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -200,7 +200,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛ²²²²²²²²²²² 45%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 45%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 11) Current Windows .bak files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree %windir%\Prefetch /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -214,7 +214,7 @@ echo.
 echo.
 echo Loading Please Wait Almost Done...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛ²²²²²²²²² 50%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 50%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 12) Current Windows Update Download files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree %windir%\softwaredistribution /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -230,7 +230,7 @@ echo.
 echo.
 echo Loading Please Wait...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛ²²²²²²²²²² 55%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 55%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo 13) Current Recyclebin files >>"C:\Users\Public\Desktop\Log.txt" 
 Tree c:\$Recycle.bin /F /A >>"C:\Users\Public\Desktop\Log.txt" 
@@ -249,7 +249,7 @@ echo.
 echo.
 echo Loading Please Wait Almost Done...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛ²²²²²²²² 60%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 60%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -258,7 +258,7 @@ echo.
 echo.
 echo Loading Please Wait Almost Done...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛ²²²²²²² 65%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 65%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -267,7 +267,7 @@ echo.
 echo.
 echo Loading...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²²²²² 70%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ 70%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -276,7 +276,7 @@ echo.
 echo.
 echo Loading...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²²² 80%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ 80%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -285,7 +285,7 @@ echo.
 echo.
 echo Loading...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²²² 85%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ï¿½ 85%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -294,7 +294,7 @@ echo.
 echo.
 echo Loading...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ²² 90%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û²ï¿½ 90%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -303,7 +303,7 @@ echo.
 echo.
 echo Loading...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ² 95%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û² 95%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 ping -n 1 localhost >nul
@@ -312,7 +312,7 @@ echo.
 echo.
 echo Loading...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ 100%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 100%%
 echo =========================================================================================== >>"C:\Users\Public\Desktop\Log.txt" 
 echo ----------------------------------
 GOTO END
@@ -322,7 +322,7 @@ echo.
 echo.
 echo Clear Files Successfully complete...
 echo ----------------------------------
-echo Progress: ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ 100%%
+echo Progress: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 100%%
 echo.
 echo.
 Color 1A
