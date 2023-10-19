@@ -3,27 +3,22 @@ REM Branding Universal Alienware c drive os icon Setting Area: =============
 REM Copy Files:
 if not exist "C:\Dell\alienware\image" mkdir "C:\Dell\alienware\image"
 xcopy "%~dp0image" "C:\Dell\alienware\image" /e /i /h /y
+
 REM C Drive Autorun for Drive Icon:
 if not exist "C:\autorun.inf" copy "%~dp0autorun.inf" "C:\"
 if not exist "C:\alienware.ico" copy "%~dp0alienware.ico" "C:\"
+
+REM Clear Command By Md Omman
+if not exist "C:\Dell\alienware\clear.bat" copy "%~dp0scripts\clear.bat" "C:\Dell\alienware\clear.bat"
+if not exist "C:\Users\Public\Desktop\Clear.lnk" copy "%~dp0shortcut\Clear.lnk" "C:\Users\Public\Desktop"
+
 REM Hide Autorun File:
 attrib +h +r "C:\autorun.inf"
 attrib +h +r "C:\alienware.ico"
 
-REM Desktop Icon Enable Command:
-REG IMPORT "%~dp0reg\Desktop_Icon_Enable.reg"
-
-REM Changing This Computer Name Check Current Name:
-hostname
-REMChanging This Computer Name:
-call powershell.exe Rename-COMPUTER "DEVPCA"
-
-
-REM Personal Setting Area: ==============
-REM Clear Command By Md Omman
-if not exist "C:\Dell\alienware\Clear.bat" copy "%~dp0Clear.bat" "C:\Dell\alienware\Clear.bat"
-if not exist "C:\Users\Public\Desktop\Clear.lnk" copy "%~dp0shortcut\Clear.lnk" "C:\Users\Public\Desktop"
-
+REM Branding Setting Area: ==============
+REM Change C Driver Name:
+label C:OS
 
 REM Display Setting / Power & Sleep 
 REM =======================================================
@@ -65,8 +60,7 @@ REM ============================================================================
 
 REM  Display Setting / Power & Sleep / Additional Setting
 REM =======================================================
-
-REM Power Button Action in Windows 10 Command By Omman
+REM Power Button Action in Windows Command By Omman
 REM ========================================================================================================================
 REM (On battery) Command:
 REM ========================================================================================================================
@@ -125,11 +119,37 @@ powercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5c
 powercfg -setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 0
 REM ========================================================================================================================
 
+rem Automatically pick a color from my background for Registry Import File..
+rem [HKEY_CURRENT_USER\Control Panel\Desktop]
+rem ; dword:00000000 to Disable
+rem ; dword:00000001 to Enable
+rem ;"AutoColorization"=dword:00000000
+rem "AutoColorization"=dword:00000001
+rem Automatically pick a color from my background for Command Line Use:
+REG ADD "HKCU\Control Panel\Desktop" /v "AutoColorization" /t "REG_DWORD" /d "00000001" /f
+rem or 
+rem REG ADD "HKCU\Control Panel\Desktop" /v "AutoColorization" /t "REG_DWORD" /d "00000000" /f
+
+
+REM Branding Registry Setting Area: ==============
+REM For Default Icon
+REM REG IMPORT "%~dp0reg\Desktop_Icon_Default.reg" **ONLY IF MAKE IT DEFAULT**
+
+REM OEM Information for Branding:
+if not exist "C:\Dell\alienware\image\alienware.bmp" copy "%~dp0image\alienware.bmp" "C:\Dell\alienware\image\alienware.bmp"
+REG IMPORT "%~dp0reg\OEMInformation.reg"
+
+REM Desktop Walpaper Enable Command:
+if not exist "C:\Dell\alienware\image\alienware_dark.jpg" copy "%~dp0image\alienware_dark.jpg" "C:\Dell\alienware\image\alienware_dark.jpg"
+REG IMPORT "%~dp0reg\Walpaper.reg"
+
+REM Desktop Icon Enable Command:
+REG IMPORT "%~dp0reg\Desktop_Icon_Enable.reg"
+
+REM Changing This Computer Name Check Current Name:
+hostname
+REMChanging This Computer Name:
+call powershell.exe Rename-COMPUTER "DEVPCA"
+
 REM Exit This Command
 exit
-
-
-
-
-
-
